@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "cowsay_django"
+version = "0.1.0"
+description = ""
+authors = ["Janell.Huyck <Janell.Huyck@outlook.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+django = "^3.0.6"
+cowsay = "^2.0.3"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^3.7.9"
+pep8 = "^1.7.1"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
