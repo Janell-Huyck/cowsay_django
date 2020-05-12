@@ -43,7 +43,13 @@ def index(request):
 def history(request):
     moos = []
     all_moos = MooText.objects.all().order_by('-pk')
-    for i in range(0, 10):
-        moos.append([i + 1, all_moos[i].text])
+    number_of_moos = len(all_moos)
+    if number_of_moos >= 10:
+        for i in range(0, 10):
+            moos.append([i + 1, all_moos[i].text])
+    else:
+        for i in range(0, number_of_moos):
+            moos.append([i + 1, all_moos[i].text])
+
     return render(request, 'history.html', {
         'moos': moos, })
