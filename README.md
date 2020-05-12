@@ -10,5 +10,5 @@ linked on the index page.
 The farm photo is courtesy of Pixabay, and I tried to arrange it so that it looked like the "cow"
 that was speaking was standing in the pasture.
 
-This was a cute little project that uses subprocess to send requests to the cowsay module, and the
-<pre></pre> HTML tags to render the cow on the page.
+This was a cute little project that used the Python subprocess command to retrieve a Cowsay response, and
+the \<pre\> and \<\\pre\> HTML tags to render it on the screen.
