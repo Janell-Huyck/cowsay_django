@@ -12,6 +12,7 @@ cowsay = "^2.0.3"
 [tool.poetry.dev-dependencies]
 flake8 = "^3.7.9"
 pep8 = "^1.7.1"
+autopep8 = "^1.5.2"
 
 [build-system]
 requires = ["poetry>=0.12"]

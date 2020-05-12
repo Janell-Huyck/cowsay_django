@@ -1,0 +1,15 @@
+{% extends 'base.html'%}
+{% load static %}
+
+{% block content%}
+    <div class="pixabay_logo">
+        <img src="{% static 'moo/logo_square.png' %}" height="10%" alt="pixabay logo here" >
+    </div>
+    <div class="cow_area">
+        <pre>{{cow_list}}</pre>
+    </div>
+    <hr>
+    <div class="moo">
+        {% include "moo_form.html"%}
+    </div>
+{%endblock%}
