@@ -13,9 +13,9 @@ def index(request):
         form = MooForm(request.POST)
         if form.is_valid():
             words = form.cleaned_data['text']
-            if "'" in words:
+            if "'" in words or ";" in words:
                 form = MooForm()
-                message_before = """Sorry, cows can't speak with apostrophes.
+                message_before = """Sorry, cows can't speak with apostrophes or semicolons.
                   Try again?"""
                 context = {
                     'form': form,
