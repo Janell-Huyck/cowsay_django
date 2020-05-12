@@ -1,5 +1,5 @@
 # cowsay_django
-This program is just an enhancement of the "command-line toy" cowsay.  
+This program is a small enhancement of the "command-line toy" cowsay.  
 Cowsay is a classic python module that simply echos back a user's text in the form of a speech-bubble
 being said by an ascii-art cow or other animal.
 
