@@ -2,8 +2,15 @@
     background-color: green;
 }
 
-.h1 {
-    /* background-image: url(../moo/logo_square.png) */
-    /* background-image: url("{% static 'moo/logo_square.png' %} "); */
-    background-color: orange
+body {
+        background-image: url(../moo/barn-1031613_1920.jpg);
+
+}
+
+header {
+    background-color: white
+}
+.moo {
+    background-color: white
+
 }

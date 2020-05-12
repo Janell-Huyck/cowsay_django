@@ -1,16 +1,37 @@
 .cow_area {
-    background-color: green;
+    background-color:#00000075;
+    align-self: flex-end;
+    justify-self: flex-end;
+    margin-top: 50px;
+    margin-right: 20%;
+    margin-bottom: -50px;
+    color: white
 }
 
 body {
-        background-image: url(../moo/logo_square.png);
-
+        background-image: url(../moo/barn-1031613_1920.jpg);
+        background-size: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
 }
 
 header {
-    background-color: white
+    background-color: white;
+    text-align: center;
 }
 .moo {
+    align-self: flex-end;
     background-color: white
 
+}
+
+.pixabay_logo {
+    align-self: flex-start;
+    background-color: blue;
+}
+
+.link_area{
+    background-color:#00000075;
+    color: white
 }
