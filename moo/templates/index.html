@@ -7,10 +7,9 @@
     <p class="link_area">Curious what's been moo'd before?  <a href="{% url 'history' %}">Click here</a> to be directed to a list of the last 10 moo's. </p>
     </div>
     <hr>
-    <div class="cow_area">
-        <pre>{{cow_list}}</pre>
-    </div>
-    <div class="pixabay_logo">
-        <img src="{% static 'moo/logo_square.png' %}" height="10%" alt="pixabay logo here" >
-    </div>
+    {% if cow_speaking %}
+        <div class="cow_area">
+            <pre>{{cow_speaking}}</pre>
+        </div>
+    {% endif %}
 {%endblock%}

@@ -6,7 +6,7 @@ from moo import get_cow
 
 
 def index(request):
-    cow_list = []
+    cow_speaking = []
     html = "moo_form.html"
     message_before = "What does the cow say?"
     if request.method == "POST":
@@ -20,13 +20,13 @@ def index(request):
                 context = {
                     'form': form,
                     'message_before': message_before,
-                    'cow_list': cow_list,
+                    'cow_speaking': cow_speaking,
                     'html': html,
                 }
                 return render(request, 'index.html', context)
 
             cow_byte_string = get_cow.get_cow(words)
-            cow_list = cow_byte_string.decode()
+            cow_speaking = cow_byte_string.decode()
             MooText.objects.create(
                 text=words
             )
@@ -34,7 +34,7 @@ def index(request):
     context = {
         'form': form,
         'message_before': message_before,
-        'cow_list': cow_list,
+        'cow_speaking': cow_speaking,
         'html': html,
     }
     return render(request, 'index.html', context)
